@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+	body{		
+		font-size: 14pt;		
+	}
+	.topheader{
+		/*border: 1px solid red;*/
+	}
+	.topleft{
+		
+	}
+	.topright{
+		text-align: right;
+		padding-top: 18px;
+		/*border: yellow solid 1px;*/
+	}
+	.headerbanner{
+	}
+	.content{
+		text-align:justify;
+		padding: 20px;
+	}
+	.footer{
+		background:#000;
+		padding: 40px;
+		height: 300px;
+		color: #eee;
+	}
+	.nav-link{
+		font-weight:bold;
+		font-size: 20px;
+		color: red;
+		/*border-right: solid;		*/
+	}
+	.nav-link:hover{		
+		color: green;		
+	}
+	.nav-item{
+		color:blue; 
+		border-right: 1px solid blue;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.nav-item:last-child { border-right: none;}
+	
+	#logo{
+		width: 40%;
+	}
+	#banner{
+		width:100%;
+	}
+	
+	@media (max-width: 600px) {
+		.topright{			
+			padding-top: 0px;
+		}
+		.nav-item{
+			margin-top: 10px;
+			border-bottom: 1px solid #ccc;
+			border-right:none;
+		}
+		.nav-item:last-child { border-bottom: none;}
+		#logo{
+			width: 100%;
+		}
+		.navbar-toggler{
+			margin-top: 17px;
+		}
+	}	
+	
+	.tieudecuocthi{
+		text-align: center;
+		font-weight:bold;	
+		width: 100%;
+		
+	}
+	p{
+		/*padding: 20px;*/
+	}
+	.demuccap1{
+		color: blue;
+		font-size: 18pt;
+		margin-top:15px;
+		/*margin-bottom:20px;*/		
+		/*font-weight:bold;*/
+	}
+	.demuccap2{
+		color: #000;
+		font-size: 14pt;
+	}
+	.noidungcuocthi{		
+	}
+	ol{
+		/*border: 1px solid red;*/
+		list-style-position: inside;
+		padding: 0px;
+	}
+	
+	/*ol {
+    counter-reset: section;
+    list-style-type: none;
+	}
+
+	li:before {
+		counter-increment: section;
+		content: counters(section, ".") ". " counters(section, ".") " ";
+	}*/
+
+</style>
+
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="topheader row">		
+		<div class="topleft col-lg-4 col-md-4 col-sm-4 col-4">			
+			<a class="navbar-brand" href="#"><img id="logo" src="assets/img_cuocthianhcusc/cusc_logo.png"></a>
+		</div>
+		<div class="topright col-lg-8 col-md-8 col-sm-8 col-8">
+			<nav class="navbar navbar-light navbar-expand-md">
+					<button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+					<div class="collapse navbar-collapse" id="navcol-1">
+						<ul class="nav navbar-nav text-uppercase ml-auto" >
+							<li class="nav-item" role="presentation"><a class="nav-link" href="https://arena.cusc.vn/" >Trang Chủ</a></li>
+							
+							<li class="nav-item" role="presentation"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLScjrhqQ0F9PJPTsZzd1R-7Df-Nkmsfd-Tv7vZP__qOIyH383w/viewform" >Đăng ký</a></li>
+							
+							<li class="nav-item"
+								role="presentation"><a class="nav-link" href="https://aptech.cusc.vn/cusctour/" >Tham quan cusc</a></li>
+						</ul>
+					</div>
+				
+			</nav>
+		</div>
+	</div>
+	<div class="headerbanner row">
+		<img id="banner" src="assets/img_cuocthianhcusc/banner.jpg" >
+	</div>
+</div>
+
+<div class="container">	
+	<div class="content row">	
+		<div class="tieudecuocthi">
+			<h1>Cuộc thi "Web App Challenge 2021"</h1> 
+		</div>
+		<div>
+			<p>		
+				Cuộc thi nhằm tạo sân chơi cho các sinh viên CUSC yêu thích lập trình và cũng là dịp để CUSC tìm ra nhóm sinh viên Lập trình viên xuất sắc, là cơ hội để sinh viên vận dụng kiến thức chuyên môn vào sản xuất một sản phẩm phần mềm thực tế có tính sáng tạo và vận dụng được vào thực tiễn đời sống, cũng nhằm mục đích chọn lọc được các sản phẩm tốt, những ý tưởng thiết kế phần mềm hay để tham gia các cuộc thi trong và ngoài nước.
+			</p>	
+		</div>
+		<div class="noidungcuocthi">
+			<ol>
+				<li class="demuccap1">Đối tượng dự thi
+					<ul>
+						<li class="demuccap2">Sinh viên đã và đang học tập tại CUSC.</li>
+						<li class="demuccap2">Sinh viên có thể dự thi theo nhóm hoặc cá nhân.</li>
+					</ul>
+				</li>
+				<li class="demuccap1">Chủ đề
+					<ul>
+						<li class="demuccap2">Cuộc thi dành cho các sinh viên yêu thích lập trình với chủ đề: "Web App Challenge".</li>
+					</ul>
+				</li>
+				<li class="demuccap1">Nội dung thực hiện
+					<ul>
+						<li class="demuccap2">Ứng dụng CNTT vào cuộc sống thực tiễn như: học tập, giảng dạy, giải trí, thương mại...</li>
+						<li class="demuccap2">Liên quan đến những vấn đề thời sự của ngành công nghệ thông tin, an toàn thực phẩm, bảo vệ môi trường, đô thị thông minh, nông nghiệp thông minh,...</li>			
+					</ul>
+				</li>
+				<li class="demuccap1">Thể loại dự thi
+					<ul>
+						<li class="demuccap2">
+						Có 2 thể loại sản phẩm phần mềm dự thi là: <font color="blue"><b>front-end web</b></font> và <font color="blue"><b>back-end web</b></font>. Sinh viên có thể ứng dụng bất kỳ nền tảng công nghệ để xây dựng ứng dụng.</br>								     
+						
+						<ol style="margin-left:25px;">
+							<li>
+							<font color="blue"><b>
+											Front-end web:
+											</b></font>
+							<ul type="disc">
+							<li>	HTML5, CSS3, Javascript, AngularJS, ...</li>
+							<li>	Framework: Bootstrap, jQuery, VueJS, ...</li>			
+							</ul>
+							</li>
+							<li>
+							<font color="blue"><b>
+											Back-end web:
+											</b></font>
+							
+							<ul type="disc">
+							<li>	Ứng dụng web với .Net: ASP.Net, ASP.Net MVC, ...</li>
+							<li>	Framework: Bootstrap, jQuery, VueJS, ...</li>
+							<li>	Ứng dụng web với PHP: PHP, PHP Laravel framework, ...</li>
+							</ul>
+							</li>
+						</ol>	
+						</li>		
+					</ul>
+				</li>
+				
+				<li class="demuccap1">Quy định chung
+					<ul>
+						<li class="demuccap2">Tham gia cuộc thi đồng nghĩa với việc tác giả chấp thuận những quy định của cuộc thi.</li>
+						<li class="demuccap2">Ban tổ chức cuộc thi được phép sử dụng các hình ảnh và sản phẩm dự thi để phục vụ cho công tác quảng bá, truyền thông liên quan đến cuộc thi.</li>
+						<li class="demuccap2">Tác giả phải chịu trách nhiệm về bản quyền sản phẩm của  mình. Ban tổ chức không chịu trách nhiệm về bất cứ tranh chấp nào liên quan tới bản quyền sản phẩm.</li>
+						<li class="demuccap2">Các sản phẩm đã đạt giải nhất, nhì, ba ở bất kỳ cuộc thi nào khác trong và ngoài Trung tâm đều không được tham gia dự thi.</li></p>
+						<li class="demuccap2">Sinh viên phải viết thuyết minh và trình bày sản phẩm dự thi cho hội đồng chấm thi.</li>
+					</ul>
+				</li>
+				
+				<li class="demuccap1">Tiêu chí đánh giá
+					<ul>
+						<li class="demuccap2">
+							Sản phẩm tham gia dự thi được đánh giá, chấm điểm dựa trên ba tiêu chí chính là tính hoàn thiện, tính công nghệ/ kỹ thuật và tính sáng tạo/thẩm mỹ, tỉ trọng đánh giá cho từng tiêu chí:					
+							<ul type="disc">
+							<li>Tính hoàn thiện: 40%</li>
+							<li>Tính công nghệ/ kỹ thuật: 30%</li>
+							<li>Tính sáng tạo/ thẩm mỹ: 30%</li>
+							</ul>
+						</li>
+						
+						<li class="demuccap2">
+							Định nghĩa các thuật ngữ:
+							<ul type="disc">
+							<li><i>Tính sáng tạo</i>: Thể hiện sự độc đáo, tính mới mẻ của chủ đề đề xuất, ý tưởng về công nghệ hoặc về một bản thiết kế; sản phẩm có sự kết hợp hiệu ứng hình ảnh, ánh sáng và thể hiện sự quy mô và tính kế thừa cao; đưa các đặc trưng mới của sản phẩm với mức độ tùy biến cao.</li>
+							<li><i>Tính thẩm mỹ</i>: Thể hiện yếu tố mỹ thuật của sản phẩm; sự phong phú, đa dạng khi kết hợp âm thanh, hình ảnh, màu sắc, chuyển động; sự hài hòa tự nhiên về bố cục, thiết kế; sự phối hợp nhịp nhàng, tinh tế giữa các thành phần.</li>
+							<li><i>Tính công nghệ/ kỹ thuật</i>: Thể hiện qua việc ứng dụng các yếu tố kỹ thuật, công nghệ mới để xây dựng các sản phẩm có tính thực tế và khả dụng cao; khả năng phân tích, thiết kế các chủ đề để phát triển ứng dụng hoặc kế thừa các công cụ sẵn có; khả năng biên tập, dàn dựng, hiệu chỉnh để xây dựng sản phẩm.</li>
+							<li><i>Tính hoàn thiện</i>: Thể hiện sự hoàn thiện của sản phẩm, thân thiện, dễ sử dụng với người dùng, đảm bảo quyền sở hữu trí tuệ. Sản phẩm được cung cấp kèm theo đầy đủ các hồ sơ, tài liệu liên quan.</li>
+							</ul>
+						</li>
+					</ul>
+				
+				</li>				
+				
+				<li class="demuccap1">Cơ cấu giải thưởng
+					<ul>
+						<li class="demuccap2">
+							<strong>Giải cho Front-end web:</strong>
+							<ul style="list-style-type:disc">
+											<li>01 giải NHẤT: <span style="font-weight:bold; color:blue;">1,200,000 đồng</span></li>
+											<li>01 giải NHÌ: <span style="font-weight:bold; color:blue;">900,000 đồng</span></li>
+											<li>01 giải BA: <span style="font-weight:bold; color:blue;">600,000 đồng</span></li>
+											<li>02 giải Khuyến khích: <span style="font-weight:bold; color:blue;">300,000 đồng</span></li>
+							</ul>	
+						</li>
+						<li class="demuccap2">
+						<strong>Giải cho Back-end web:</strong>
+						<ul style="list-style-type:disc">
+						<li>01 giải NHẤT: <span style="font-weight:bold; color:blue;">1,500,000 đồng</span></li>
+						<li>01 giải NHÌ: <span style="font-weight:bold; color:blue;">1,000,000 đồng</span></li>
+						<li>01 giải BA: <span style="font-weight:bold; color:blue;">800,000 đồng</span></li>
+						<li>02 giải Khuyến khích: <span style="font-weight:bold; color:blue;">300,000 đồng</span></li>	
+						</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="demuccap1">Quy cách và phương thức nộp sản phẩm
+					<ul>
+						<li class="demuccap2"><strong>Quy cách nộp sản phẩm:</strong>
+						<ol style="margin-left: 25px;">
+						<li>Tài liệu thuyết minh (nhấp <a href="assets/img/2019-4 Bieu mau thuyet minh_final.docx">vô đây</a> để tải biểu mẫu thuyết minh đề tài):
+						<ul type="circle">
+						<li>Tổng quan về hiện trạng của lĩnh vực mà sản phẩm dự thi đang hướng đến.</li>
+						<li>Mục tiêu, ý nghĩa và tính cấp thiết của sản phẩm dự thi.</li>
+						<li>Khả năng ứng dụng của sản phẩm dự thi.</li>
+						</ul>
+						</li>		
+						
+						
+						<li>Tài liệu và sản phẩm:
+						<ul type="circle">
+						<li>Thiết kế của ứng dụng (giao diện và giải thuật xử lý, đặc biệt là các chức năng về xử lý nghiệp vụ của ứng dụng).</li>
+						<li>Mã nguồn ứng dụng, cơ sở dữ liệu, tài nguyên có liên quan đến ứng dụng, ứng dụng đã được biên dịch.</li>
+						</ul>
+						</li>
+						</ol>
+						</li>
+						<li  class="demuccap2"><strong>Phương thức nộp sản phẩm:</strong> Thí sinh đăng ký và nộp bài thi trực tuyến bằng cách nhấp vào nút đăng ký bên dưới:</li>
+						<p>
+							<div style="text-align:center">
+								<a href="https://docs.google.com/forms/d/e/1FAIpQLSdNzIqdYjJ1ovWxJrTacogwVj_GaVmG9-Yu2O5yuIrug8Bo4A/viewform" target="_blank"><img src="assets/img_cuocthianhcusc/dk.png" id="dk" style="width: 200px;"></a><br/>
+							</div>
+							<div style="font-size: 11pt; text-align:center">
+							(<b>*Lưu ý khi đăng ký: </b>Nhập đầy đủ các thông tin bắt buộc <span style="color:red">*</span>)
+							</div>
+						</p>
+					</ul>
+				</li>
+				<li class="demuccap1">Thời hạn dự thi
+				<ul>
+					<li class="demuccap2">Thời hạn đăng ký và nộp sản phẩm dự thi: từ ngày <b>01/10/2019</b> đến hết ngày <b>22/12/2019</b>.</li>
+					<li class="demuccap2">Thời gian chấm giải cuộc thi: từ <b>24/12/2019</b> đến <b>27/12/2019</b></li>
+				</ul>
+				</li>
+				<li class="demuccap1">Ban tổ chức
+					<ul>
+						<li class="demuccap2">Trưởng ban tổ chức: Thầy <b>Nguyễn Hùng Dũng</b> – Trưởng Bộ môn KTPM&ĐPT</li>
+						<li class="demuccap2">Hội đồng giám khảo: 
+						<ul type="disc">
+							<li>Thầy <b>Trương Xuân Việt</b> – Trưởng ban</li>
+							<li>Thầy <b>Nguyễn Hùng Dũng</b> – thành viên</li>
+							<li>Thầy <b>Đại diện hiệp hội CNTT Cần Thơ</b> – thành viên</li>
+						</ul>
+						</li>
+					</ul>
+				</li>
+				
+			</ol>
+		</div>
+		
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="footer row">
+            <div id="contentleft" class="col-sm-12">
+                <p>Trung tâm Công nghệ Phần mềm Đại học Cần Thơ&nbsp;<br></p>
+                <p>Địa chỉ: 01 - Lý Tự Trọng, Q.Ninh Kiều, TP. Cần Thơ, Việt Nam<br></p>
+                <p>Điện thoại: +84 292 383 5581 - Fax: +84 292 373 1071<br></p>
+                <p>Email: cusc@ctu.edu.vn<br></p>
+            </div>        
+	</div>	
+</div>
+</body>
+</html>
